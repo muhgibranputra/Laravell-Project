@@ -1,0 +1,388 @@
+*,*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+    /* padding-bottom: 1000px; */
+}
+/* Awal dari navbar container */
+header.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    z-index: 9999;
+}
+   
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+header.navbar-container .nav-list li {
+    list-style-type: none;
+    
+}
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.30rem;
+    font-weight: 500;
+    color: #5271FF;
+    transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a {
+    background-color: #5271FF;
+    color: white;
+}
+/* Akhir dari navbar container */
+  
+/* Awal dari main container */
+main {
+    flex: 1;
+    width: 100%;  max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;  align-items: center;
+    flex-direction: column;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+main .content .content-description {
+    flex: 1 1;
+}
+main .content .content-description .title {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+    color: #5271FF;
+}
+main .content .content-description p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #5271FF;
+}
+main .content .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #5271FF;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+main .content .content-description button:hover {
+    border: 3px solid #5271FF;
+    background-color: transparent;
+    color: #5271FF;
+}
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #5271FF;
+    display: flex;  flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main aside .social-media li {
+    list-style-type: none;
+}
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+/* Akhir dari main container */
+
+/* Awal dari content 2 */
+.content2 h2 {
+    text-align: center;
+    color: #5271FF;
+    font-size: 2.3rem;
+}
+.content2 .content2-description{
+    /* width: 100%;   */
+    /* max-width: 2000px; */
+    max-width: 1500px;
+    /* margin-inline: auto; */
+    padding: 2rem 4rem;
+    display: flex;  
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.card {
+    width: 390px;
+    height: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* padding: 20px; */
+    text-align: center;
+    color: #5271FF;
+    margin-top: 30px;
+}
+
+/* .card.empat p{
+    font-size: larger;
+} */
+
+
+.content2 .content2-description .card h3 {
+    align-self: center;
+    color: #5271FF;
+}
+
+.content2 .content2-description .card p {
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+
+.content2-description .card img {
+    object-fit: cover;
+    width: 350px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 205px;
+}
+
+.content2-description .card-last img {
+    object-fit: cover;
+    width: 350px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 205px;
+}
+/* Akhir dari content 2 */
+
+/* Awal dari jasa-layanan */
+.jasa-layanan {
+    background-color: #F3F8FF;
+
+}
+.jasa-layanan h2 {
+    color: #5271FF;
+    text-align: center;
+    font-size: 2.3rem;
+}
+.layanan {
+    max-width: 1700px;
+    padding: 2rem 4rem;
+    display: flex;  
+    /* align-items: center; */
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.jasa-layanan .layanan .layanan-tersedia {
+    flex: 1;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.jasa-layanan .gambar-laundry img {
+    object-fit: cover;
+    width: 450px;
+    padding: 10px;
+    border-radius: 30px;
+    height: 700px;
+}
+
+/* Awal dari halaman about */
+main .about-us h1{
+    color: #5271FF;
+}
+
+#sejarah {
+    color: green;
+}
+
+main .about-us .article h2 {
+    color: green;
+}
+
+main .about-us .article hr {
+    color: #5271FF;
+}
+/* Akhir dari halaman about */
+
+/* Awal dari halaman layanan&harga */
+.cara-kerja h1{
+    color: #5271FF;
+    text-align: center;
+}
+.cara-kerja-kucuci {
+    /* max-width: 1700px; */
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;  
+    /* align-items: center; */
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.cara-kerja .cara-kerja-kucuci .cara {
+    width: 390px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* padding: 20px; */
+    text-align: center;
+    color: #5271FF;
+    margin-top: 30px;
+}
+.cara img{
+    width: 200px;
+
+}
+/* Akhir dari cara kerja */
+
+/* Awal dari pricing */
+.price {
+    /* width: 100%;   */
+    /* max-width: 2000px; */
+    max-width: 1500px;
+    /* margin-inline: auto; */
+    padding: 2rem 4rem;
+    display: flex;  
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+.pricing h1 {
+    color: #5271FF;
+    text-align: center;
+}
+
+.pricing .price .cuci {
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* padding: 20px; */
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pricing .price .cuci h2 {
+    text-align: center;
+    color: #5271FF;
+}
+
+
+
+/* Awal dari footer */
+body footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #5271FF;
+    color: white;
+    margin-top: auto;
+    position: sticky;
+    top: 100%;
+}
+/* Akhir dari footer */
+/* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main {
+        padding: 1rem 3rem;
+    }
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+    main .content .content-image {
+        order: -1;
+    }
+    .jasa-layanan .gambar-laundry img {
+        object-fit: cover;
+        width: 300px;
+        padding: 10px;
+        border-radius: 30px;
+        height: 500px;
+    }
+}
+
